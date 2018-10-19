@@ -22,9 +22,9 @@ import java.lang.annotation.Target;
 
 /**
  * springboot
- * Created by wei.peng
+ * Created by com.peng
  *
- * @Author: wei.peng
+ * @Author: com.peng
  * @Date: 2018/10/10 12:55
  */
 @Target({ElementType.METHOD})
