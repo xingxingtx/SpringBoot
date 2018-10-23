@@ -9,6 +9,7 @@
 	<packaging>pom</packaging>
 	<modules>
 		<module>springbootone</module>
+		<module>SpringBootMain</module>
 	</modules>
 	<name>com</name>
 	<description>Demo project for Spring Boot</description>

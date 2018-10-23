@@ -27,7 +27,7 @@ import java.util.Map;
  * @Author:wei.peng
  * @Desicription:ExcelUtil工具类
  * @Date:Created in 2017-08-16 16:41
- * @Modified By:ZGP
+ * @Modified By:wei.peng
  */
 public class ExcelUtil {
     public static String DEFAULT_DATE_PATTERN="yyyy年MM月dd日";//默认日期格式
@@ -39,7 +39,7 @@ public class ExcelUtil {
      * @param title 标题行
      * @param headMap 属性-列头
      * @param jsonArray 数据集
-     * @param arraysName 数据集中包含的数组名称集合  譬如  一个对象中包含  list1  list2  则为  {"list1","list2"} Modified by zgp 10.11
+     * @param arraysName 数据集中包含的数组名称集合  譬如  一个对象中包含  list1  list2  则为  {"list1","list2"} Modified by wei.peng 10.11
      * @param datePattern 日期格式，传null值则默认 年月日
      * @param colWidth 列宽 默认 至少17个字节
      */

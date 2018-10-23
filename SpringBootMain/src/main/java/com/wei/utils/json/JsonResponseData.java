@@ -4,7 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 /**
- * Created by ZGP on 2018/8/2.
+ * Created by wei.peng on 2018/8/2.
  * Rest接口返回数据封装bean
  */
 public class JsonResponseData {
@@ -23,7 +23,6 @@ public class JsonResponseData {
         this.data = data==null?new Object():data;
     }
 
-
     //是否成功
     private Boolean ret = false;
 
@@ -38,6 +37,7 @@ public class JsonResponseData {
 
     //返回数据
     private Object data = null;
+
 
     public Boolean getRet() {
         return ret;

@@ -3,7 +3,7 @@ package com.wei.utils.json;
 import java.util.Date;
 
 /**
- * Created by ZGP
+ * Created by wei.peng
  * JSON数据消息头
  */
 public class JsonHeadData {

@@ -28,7 +28,8 @@ public class AppLogAspect {
     // 保证每个线程都有一个单独的实例
     private ThreadLocal<Long> threadLocal = new ThreadLocal<>();
 
-    @Pointcut("execution(* com.wei.controller..*.*(..))")
+    //@Pointcut("execution(* com.wei.controller..*.*(..))")
+    @Pointcut("@annotation(com.wei.aop.annotation.BusinessLogAnnotation)")
     public void pointcut() {
     }
 

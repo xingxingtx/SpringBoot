@@ -24,7 +24,7 @@ public class ScheduledTasks {
      *
      * @author zhangyd
      */
-    @Scheduled(cron = "0/10 * * * * ? ")
+    @Scheduled(cron = "0 0 12 * * ?")
     public void doJobByCron() {
         log.info(new Date() + "-----------------doJobByCron");
     }
@@ -33,7 +33,7 @@ public class ScheduledTasks {
      *
      * @author zhangyd
      */
-    @Scheduled(fixedRate = 5 * 1000)
+    @Scheduled(fixedRate = 5 * 100000)
     public void doJobByFixedRate() {
         log.info(new Date() + "-----------------doJobByFixedRate");
     }
@@ -42,7 +42,7 @@ public class ScheduledTasks {
      *
      * @author zhangyd
      */
-    @Scheduled(fixedDelay = 1 * 1000)
+    @Scheduled(fixedDelay = 1 * 100000)
     public void doJobByFixedDelay() {
         log.info(new Date() + "******************doJobByFixedDelay");
     }
@@ -51,7 +51,7 @@ public class ScheduledTasks {
      *
      * @author zhangyd
      */
-    @Scheduled(initialDelay = 1000, fixedRate = 2000)
+    @Scheduled(initialDelay = 10000, fixedRate = 20000)
     public void doInitialDelay() {
         log.info(new Date() + "+++++++++++++++++++doInitialDelay");
     }

@@ -492,15 +492,10 @@ public class Utils {
     public static String validation(String regex,String date,int minLength, int maxLength, String msg){
         DataValidation validation = new DataValidation();
         if(!StringUtils.isBlank(date)){
-            try {
                 if(!StringUtils.isBlank(regex)) {
                     validation.cheFormat(regex, date, msg);
                 }
                 validation.chkLength(date,minLength,maxLength,msg);
-            }catch (DataValidationException d){
-                return new JsonResponseData(false, msg, StatusDefine.DATA_FORMAT_ERROR,
-                        StatusDefineMessage.GetMessage(StatusDefine.DATA_FORMAT_ERROR), null).toString();
-            }
         }
         return null;
     }

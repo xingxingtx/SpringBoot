@@ -1,7 +1,7 @@
 package com.wei.utils.define;
 
 /**
- * Created by ZGP on 2018/8/3.
+ * Created by wei.peng on 2018/8/3.
  * 常量接口定义API接口返回值
  */
 

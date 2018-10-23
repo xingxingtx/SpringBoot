@@ -19,7 +19,7 @@ import java.util.Date;
 public class DynamicScheduledConfig implements SchedulingConfigurer {
 
     // 默认每秒执行一次定时任务
-    private String cron = "0/5 * * * * ?";
+    private String cron = "0 0 12 * * ?";
 
     @Override
     public void configureTasks(ScheduledTaskRegistrar taskRegistrar) {
