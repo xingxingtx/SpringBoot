@@ -15,7 +15,7 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * @author com.peng
+ * @author wei.peng
  * @version 1.0
  * @name
  * @description 读取并解析excel
@@ -27,7 +27,6 @@ public class ImportExcel {
     private Workbook wb;
     private Sheet sheet;
     private Row row;
-
     /**
      * 读取Excel表格表头的内容
      * @param is
@@ -36,6 +35,7 @@ public class ImportExcel {
     public String[] readExcelTitle(InputStream is) {
         try {
             fs = new POIFSFileSystem(is);
+            //用于Excel文件中的.xls格式
             wb = new HSSFWorkbook(fs);
         } catch (IOException e) {
             e.printStackTrace();
@@ -56,8 +56,9 @@ public class ImportExcel {
      * 读取Excel数据内容
      * @param is
      * @return Map 包含单元格数据内容的Map对象
+     * @param  line 第几行开始是内容
      */
-    public List<ArrayList<String>> readExcelContent(InputStream is) {
+    public List<ArrayList<String>> readExcelContent(InputStream is, int line) {
         List<ArrayList<String>> content = new ArrayList<ArrayList<String>>();
         String str = "";
         try {
@@ -67,23 +68,28 @@ public class ImportExcel {
         }catch (InvalidFormatException e){
             throw new FileServiceException("读取excel数据出错:"+e.getMessage());
         }
-        sheet = wb.getSheetAt(0);
-        // 得到总行数
-        int rowNum = sheet.getLastRowNum();
-        //索引从第一行开始
-        row = sheet.getRow(0);
-        int colNum = row.getPhysicalNumberOfCells();
-        // 正文内容应该从第二行开始,第一行为表头的标题
-        for (int i = 1; i <= rowNum; i++) {
-            ArrayList<String> rowList = new ArrayList<String>();
-            row = sheet.getRow(i);
-            int j = 0;
-            while (j < colNum) {
-                rowList.add(getCellFormatValue(row.getCell((short) j)));
-                j++;
+        //得到sheet数量
+        int index = wb.getNumberOfSheets();
+        //for (int j= 0;  j< index; j++) {
+            sheet = wb.getSheetAt(0);
+            // 得到总行数
+            int rowNum = sheet.getLastRowNum();
+            //索引从第一行开始
+            row = sheet.getRow(0);
+            int colNum = row.getPhysicalNumberOfCells();
+            // 正文内容应该从第二行开始,第一行为表头的标题
+            for (int i = line -1; i <= rowNum; i++) {
+                ArrayList<String> rowList = new ArrayList<String>();
+                row = sheet.getRow(i);
+                int d = 0;
+                while (d < colNum) {
+                    rowList.add(getCellFormatValue(row.getCell(d)));
+                    d++;
+                }
+                content.add(rowList);
             }
-            content.add(rowList);
-        }
+        //}
+
         return content;
     }
 
