@@ -86,23 +86,29 @@
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
-			<version>3.15</version>
+			<version>3.17</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-scratchpad</artifactId>
-			<version>3.15</version>
+			<version>3.17</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/xmlbeans/xbean -->
+		<dependency>
+			<groupId>xmlbeans</groupId>
+			<artifactId>xbean</artifactId>
+			<version>2.0.0</version>
 		</dependency>
 
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
-			<version>3.15</version>
+			<version>3.17</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml-schemas</artifactId>
-			<version>3.15</version>
+			<version>3.17</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
@@ -147,8 +153,7 @@
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>springloaded</artifactId>
-		</dependency>
-		<!--springboot中修改完文件后自动reload的插件 end -->
+		</dependency>		<!--springboot中修改完文件后自动reload的插件 end -->
 	</dependencies>
 
 	<build>

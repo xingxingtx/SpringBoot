@@ -48,7 +48,19 @@ spring:
           multipart:
             max-file-size: 10Mb
             max-request-size: 100Mb
-
+#邮件发送配置
+    mail:
+      host: smtp.qq.com
+      username: 982084398@qq.com
+      password: zmgkoyruvtfzbfjd
+      default-encoding: utf-8
+      properties:
+        main:
+          smtp:
+            auth: true
+            starttls:
+              enable: true
+              required: true
 #sql打印
 logging:
   level:
@@ -59,4 +71,3 @@ swagger:
 #配置mybatis扫描位置
 mybatis:
   mapper-locations: classpath*:mapper/**/*Mapper.xml
-

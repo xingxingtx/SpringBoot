@@ -24,7 +24,8 @@ public class FilterConfig implements Filter{
         if(hrequest.getRequestURI().indexOf("/index") != -1 ||
                 hrequest.getRequestURI().indexOf("/asd") != -1 ||
                 hrequest.getRequestURI().indexOf("/online") != -1 ||
-                hrequest.getRequestURI().indexOf("/login") != -1
+                hrequest.getRequestURI().indexOf("/login") != -1 ||
+                hrequest.getRequestURI().indexOf("/email") != -1
                 ) {
             filterChain.doFilter(servletRequest, servletResponse);
         }else {

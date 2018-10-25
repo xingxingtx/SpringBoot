@@ -1,0 +1,8 @@
+#### 通过注册监听器(`Listeners`) + `PropertiesLoaderUtils`的方式
+com:
+  wei:
+    type: Springboot - Listeners
+    title: 使用Listeners + PropertiesLoaderUtils获取配置文件
+    name: zyd
+    address: Beijing
+    company: in

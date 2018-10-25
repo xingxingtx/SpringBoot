@@ -3,11 +3,7 @@ package com.wei.utils.excel;
 
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import org.apache.poi.hssf.usermodel.HSSFCellStyle;
-import org.apache.poi.hssf.usermodel.HSSFFont;
-import org.apache.poi.hssf.util.HSSFColor;
-import org.apache.poi.ss.usermodel.CellStyle;
-import org.apache.poi.ss.usermodel.Font;
+import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.ss.util.CellRangeAddress;
 import org.apache.poi.xssf.streaming.SXSSFCell;
 import org.apache.poi.xssf.streaming.SXSSFRow;
@@ -29,7 +25,7 @@ import java.util.Map;
  * @Date:Created in 2017-08-16 16:41
  * @Modified By:wei.peng
  */
-public class ExcelUtil {
+public class ExcelUtils {
     public static String DEFAULT_DATE_PATTERN="yyyy年MM月dd日";//默认日期格式
     public static int DEFAULT_COLOUMN_WIDTH = 17;
 
@@ -170,7 +166,7 @@ public class ExcelUtil {
     public static void download(String title, Map<String,String> headMap, JSONArray ja, HttpServletResponse response, String[] arraysName) {
         try {
             ByteArrayOutputStream os = new ByteArrayOutputStream();
-            ExcelUtil.exportExcelX(title,headMap,ja,null,0,os,arraysName);
+            ExcelUtils.exportExcelX(title,headMap,ja,null,0,os,arraysName);
             byte[] content = os.toByteArray();
             InputStream is = new ByteArrayInputStream(content);
             // 设置response参数，可以打开下载页面
@@ -238,36 +234,35 @@ public class ExcelUtil {
         // 设置样式;
         CellStyle  style = workbook.createCellStyle();
         // 设置底边框;
-        style.setBorderBottom(HSSFCellStyle.BORDER_THIN);
+        style.setBorderBottom(BorderStyle.DOUBLE);
         // 设置底边框颜色;
-        style.setBottomBorderColor(HSSFColor.BLACK.index);
+
+        style.setBottomBorderColor(IndexedColors.BLACK.index);
         // 设置左边框;
-        style.setBorderLeft(HSSFCellStyle.BORDER_THIN);
+        style.setBorderLeft(BorderStyle.DOUBLE);
         // 设置左边框颜色;
-        style.setLeftBorderColor(HSSFColor.BLACK.index);
+        style.setLeftBorderColor(IndexedColors.BLACK.index);
         // 设置右边框;
-        style.setBorderRight(HSSFCellStyle.BORDER_THIN);
+        style.setBorderRight(BorderStyle.DOUBLE);
         // 设置右边框颜色;
-        style.setRightBorderColor(HSSFColor.BLACK.index);
+        style.setRightBorderColor(IndexedColors.BLACK.index);
         // 设置顶边框;
-        style.setBorderTop(HSSFCellStyle.BORDER_THIN);
+        style.setBorderTop(BorderStyle.DOUBLE);
         // 设置顶边框颜色;
-        style.setTopBorderColor(HSSFColor.BLACK.index);
+        style.setTopBorderColor(IndexedColors.BLACK.index);
         // 设置自动换行;
         style.setWrapText(false);
         // 设置水平对齐的样式为居中对齐;
-        style.setAlignment(HSSFCellStyle.ALIGN_CENTER);
+        style.setAlignment(HorizontalAlignment.GENERAL);
         // 设置垂直对齐的样式为居中对齐;
-        style.setVerticalAlignment(HSSFCellStyle.VERTICAL_CENTER);
+        style.setVerticalAlignment(VerticalAlignment.CENTER);
 
         // 设置字体
         Font  font = workbook.createFont();
         // 设置字体颜色
-        font.setColor(HSSFColor.VIOLET.index);
+        font.setColor((short) 1);
         // 设置字体大小
         font.setFontHeightInPoints((short) 12);
-        // 字体加粗
-        font.setBoldweight(HSSFFont.BOLDWEIGHT_BOLD);
         // 设置字体名字
         font.setFontName("Courier New");
         // 在样式用应用设置的字体;
@@ -283,33 +278,32 @@ public class ExcelUtil {
         // 设置样式;
         CellStyle  style = workbook.createCellStyle();
         // 设置底边框;
-        style.setBorderBottom(HSSFCellStyle.BORDER_THIN);
+        style.setBorderBottom(BorderStyle.NONE);
         // 设置底边框颜色;
-        style.setBottomBorderColor(HSSFColor.BLACK.index);
+        style.setBottomBorderColor(IndexedColors.RED.index);
         // 设置左边框;
-        style.setBorderLeft(HSSFCellStyle.BORDER_THIN);
+        style.setBorderLeft(BorderStyle.NONE);
         // 设置左边框颜色;
-        style.setLeftBorderColor(HSSFColor.BLACK.index);
+        style.setLeftBorderColor(IndexedColors.RED.index);
         // 设置右边框;
-        style.setBorderRight(HSSFCellStyle.BORDER_THIN);
+        style.setBorderRight(BorderStyle.NONE);
         // 设置右边框颜色;
-        style.setRightBorderColor(HSSFColor.BLACK.index);
+        style.setRightBorderColor(IndexedColors.RED.index);
         // 设置顶边框;
-        style.setBorderTop(HSSFCellStyle.BORDER_THIN);
+        style.setBorderTop(BorderStyle.NONE);
         // 设置顶边框颜色;
-        style.setTopBorderColor(HSSFColor.BLACK.index);
+        style.setTopBorderColor(IndexedColors.RED.index);
         // 设置自动换行;
         style.setWrapText(false);
         // 设置水平对齐的样式为居中对齐;
-        style.setAlignment(HSSFCellStyle.ALIGN_CENTER);
+        style.setAlignment(HorizontalAlignment.CENTER);
         // 设置垂直对齐的样式为居中对齐;
-        style.setVerticalAlignment(HSSFCellStyle.VERTICAL_CENTER);
+        style.setVerticalAlignment(VerticalAlignment.CENTER);
 
         // 设置字体
         Font  font = workbook.createFont();
         // 设置字体大小
         font.setFontHeightInPoints((short) 10);
-        font.setBoldweight(HSSFFont.BOLDWEIGHT_NORMAL);
         // 设置字体名字
         font.setFontName("Courier New");
         // 在样式用应用设置的字体;
