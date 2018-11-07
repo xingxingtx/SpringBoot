@@ -26,7 +26,7 @@ public class Swagger2 {
                 .enable(swaggerShow)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("cn.luischen.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.wei.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }

@@ -24,24 +24,24 @@ public class MyWebConfig implements WebMvcConfigurer {
                 .addPathPatterns("/asd/**");
     }
 
-    /**
+  /*  *//**
      * 注册过滤器
      * @return
-     */
+     *//*
     @SuppressWarnings({ "rawtypes", "unchecked" })
     @Bean
     public FilterRegistrationBean filterRegistry() {
         FilterRegistrationBean frBean = new FilterRegistrationBean();
         frBean.setFilter(new FilterConfig());
-        frBean.addUrlPatterns("/*");
+        frBean.addUrlPatterns("*//*");
         System.out.println("filter");
         return frBean;
     }
 
-    /**
+    *//**
      * 注册监听器
      * @return
-     */
+     *//*
     @SuppressWarnings({ "rawtypes", "unchecked" })
     @Bean
     public ServletListenerRegistrationBean listenerRegistry() {
@@ -50,6 +50,6 @@ public class MyWebConfig implements WebMvcConfigurer {
                 HttpSessionListenerConfig());
         System.out.println("listener");
         return srb;
-    }
+    }*/
 
 }

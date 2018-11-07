@@ -10,8 +10,8 @@ import java.io.IOException;
  * 过滤器
  * Created by wei.peng on 2018/10/19.
  */
-public class FilterConfig implements Filter{
-    @Override
+public class FilterConfig /*implements Filter*/{
+/*    @Override
     public void init(javax.servlet.FilterConfig filterConfig) throws ServletException {
 
     }
@@ -25,7 +25,9 @@ public class FilterConfig implements Filter{
                 hrequest.getRequestURI().indexOf("/asd") != -1 ||
                 hrequest.getRequestURI().indexOf("/online") != -1 ||
                 hrequest.getRequestURI().indexOf("/login") != -1 ||
-                hrequest.getRequestURI().indexOf("/email") != -1
+                hrequest.getRequestURI().indexOf("/email") != -1 ||
+                hrequest.getRequestURI().indexOf("/getKaptchaImage") != -1||
+                hrequest.getRequestURI().indexOf("/swagger-ui.html#/") != -1
                 ) {
             filterChain.doFilter(servletRequest, servletResponse);
         }else {
@@ -34,6 +36,6 @@ public class FilterConfig implements Filter{
     }
     @Override
     public void destroy() {
-    }
+    }*/
 
 }
