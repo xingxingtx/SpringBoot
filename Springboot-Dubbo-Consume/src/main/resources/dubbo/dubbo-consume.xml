@@ -6,7 +6,7 @@
 	http://code.alibabatech.com/schema/dubbo
 	http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-    <!-- 提供方应用信息，用于计算依赖关系 -->
+    <!-- 应用配置，用于配置当前应用信息，不管该应用是提供者还是消费者。 -->
     <dubbo:application name="example-consume" />
 
     <!-- 注册中心暴露服务地址 -->
@@ -16,7 +16,7 @@
     <dubbo:annotation package="com.consume"/>
 
 
-    <!-- 引用com.api.service.UserService服务-->
+    <!--引用服务配置，用于创建一个远程服务代理，一个引用可以指向多个注册中心。 引用com.api.service.UserService服务-->
     <dubbo:reference id="userService" interface="com.api.service.UserService"
                      check="false" version="1.0" registry="zookeeper" protocol="dubbo" timeout="15000"/>
 </beans>
