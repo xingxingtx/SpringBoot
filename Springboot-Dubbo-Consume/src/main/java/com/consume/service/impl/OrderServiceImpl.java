@@ -4,11 +4,12 @@ import com.alibaba.dubbo.config.annotation.Reference;
 import com.api.model.user.UserModel;
 import com.api.service.UserService;
 import com.consume.service.OrderService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
- * Created by Administrator on 2018/11/9.
+ *
+ * @author Administrator
+ * @date 2018/11/9
  */
 @Service
 public class OrderServiceImpl implements OrderService{
