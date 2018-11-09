@@ -24,6 +24,7 @@
 		<com.alibaba.dubbo.version>2.6.2</com.alibaba.dubbo.version>
 		<org.apache.zookeeper.version>3.4.13</org.apache.zookeeper.version>
 		<com.github.sgroschupf.zkclient.version>0.1</com.github.sgroschupf.zkclient.version>
+		<curator.version>2.8.0</curator.version>
 	</properties>
 
 	<dependencies>
@@ -48,18 +49,51 @@
 			<groupId>org.apache.zookeeper</groupId>
 			<artifactId>zookeeper</artifactId>
 			<version>${org.apache.zookeeper.version}</version>
+			<exclusions>
+				<exclusion>
+					<groupId>org.slf4j</groupId>
+					<artifactId>slf4j-log4j12</artifactId>
+				</exclusion>
+				<exclusion>
+					<groupId>log4j</groupId>
+					<artifactId>log4j</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
+
 		<dependency>
 			<groupId>com.github.sgroschupf</groupId>
 			<artifactId>zkclient</artifactId>
 			<version>${com.github.sgroschupf.zkclient.version}</version>
 		</dependency>
 		<dependency>
+			<groupId>org.apache.curator</groupId>
+			<artifactId>curator-framework</artifactId>
+			<version>${curator.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.curator</groupId>
+			<artifactId>curator-recipes</artifactId>
+			<version>${curator.version}</version>
+		</dependency>
+
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-configuration-processor</artifactId>
 			<optional>true</optional>
 		</dependency>
-		</dependencies>
+        <dependency>
+            <groupId>Springboot-Dubbo-Api</groupId>
+            <artifactId>springboot-dubbo-api</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>*</artifactId>
+					<groupId>*</groupId>
+				</exclusion>
+			</exclusions>
+        </dependency>
+    </dependencies>
 	<build>
 		<plugins>
 			<plugin>

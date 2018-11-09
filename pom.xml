@@ -12,7 +12,7 @@
 		<module>SpringBootMain</module>
 		<module>Springboot-Dubbo-Provide</module>
 		<module>Springboot-Dubbo-Consume</module>
-		<module>Springboot-Dubbo-Api</module>
+		<!--<module>Springboot-Dubbo-Api</module>-->
 	</modules>
 	<name>com</name>
 	<description>Demo project for Spring Boot</description>
