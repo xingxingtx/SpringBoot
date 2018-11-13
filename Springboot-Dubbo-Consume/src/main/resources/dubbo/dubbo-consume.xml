@@ -18,5 +18,5 @@
 
     <!--引用服务配置，用于创建一个远程服务代理，一个引用可以指向多个注册中心。 引用com.api.service.UserService服务-->
     <dubbo:reference id="userService" interface="com.api.service.UserService"
-                     check="false" version="1.0" registry="zookeeper" protocol="dubbo" timeout="15000"/>
+                     check="false" version="1.0"  timeout="15000"/>
 </beans>

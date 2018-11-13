@@ -1,9 +1,8 @@
 package com.wei.model.email;
 
-import com.wei.model.BaseModel;
+import com.wei.model.base.BaseModel;
 import lombok.Data;
 import lombok.ToString;
-import org.springframework.beans.factory.annotation.Value;
 
 /**
  * Created by Administrator on 2018/10/25.

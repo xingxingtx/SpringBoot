@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8082
 spring:
     datasource:
         name: mysql_test
@@ -61,6 +61,9 @@ spring:
             starttls:
               enable: true
               required: true
+#静态资源存放路径
+    resources:
+      static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/,classpath:/templates/
 #sql打印
 logging:
   level:

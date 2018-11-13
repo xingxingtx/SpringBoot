@@ -31,6 +31,7 @@ import java.util.*;
 /**
  * 系统工具类
  * Create by tanshaoxing on 2017-07-19.
+ * @author Administrator
  */
 public class Utils {
     //======================================== 基础工具 ========================================
@@ -98,7 +99,9 @@ public class Utils {
 
     //删除字符末尾零
     public static String delLastZero(String str) {
-        if (StringUtils.isBlank(str)) return null;
+        if (StringUtils.isBlank(str)) {
+            return null;
+        }
         String tempStr = str;
         if (str.length() - 1 == str.lastIndexOf("0")) {
             tempStr = str.substring(0, str.length() - 1);
@@ -117,8 +120,9 @@ public class Utils {
         String fourRandom = random.nextInt(10000) + "";
         int randLength = fourRandom.length();
         if(randLength<4){
-            for(int i=1; i<=4-randLength; i++)
-                fourRandom = "0" + fourRandom  ;
+            for(int i=1; i<=4-randLength; i++) {
+                fourRandom = "0" + fourRandom;
+            }
         }
         return fourRandom;
     }

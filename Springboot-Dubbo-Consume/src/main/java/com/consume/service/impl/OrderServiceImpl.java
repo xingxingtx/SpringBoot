@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class OrderServiceImpl implements OrderService{
-    @Reference(version = "1.0",url = "dubbo://192.168.1.64:20881/com.api.service.UserService")
+    @Reference(version = "1.0")
     UserService userService;
     @Override
     public void insertUser(UserModel model) {

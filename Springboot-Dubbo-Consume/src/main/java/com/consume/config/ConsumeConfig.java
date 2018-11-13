@@ -7,7 +7,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.ImportResource;
 
 /**
- * Created by Administrator on 2018/11/7.
+ *
+ * @author Administrator
+ * @date 2018/11/7
  */
 @Configuration
 @ImportResource({ "classpath:dubbo/*.xml" })

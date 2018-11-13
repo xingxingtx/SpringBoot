@@ -8,13 +8,16 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
+
+import java.io.IOException;
+
 /**
  * @author Administrator
  */
 @EnableDubboConfig
 @SpringBootApplication
 public class SpringbootDubboConsumeApplication {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		SpringApplication.run(SpringbootDubboConsumeApplication.class, args);
     }
 

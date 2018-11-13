@@ -1,8 +1,6 @@
 package com.consume.config;
 
-import com.alibaba.dubbo.config.spring.context.annotation.EnableDubbo;
 import org.springframework.beans.BeansException;
-import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.context.annotation.Configuration;
