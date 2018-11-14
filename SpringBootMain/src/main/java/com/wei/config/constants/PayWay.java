@@ -1,25 +1,23 @@
-package com.constants;
+package com.wei.config.constants;
 
 /**
- *支付类型枚举
+ *支付途径
  * @author Administrator
  * @date 2018/11/12
  */
-
-public enum PayType {
-    /**支付类型*/
-    ALI("支付宝",(short)1),WECHAT("微信",(short)2),UNION("银联",(short)3);
+public enum  PayWay {
+    PC("PC,平板",(short)1),MOBILE("手机",(short)2);
 
     private Short code;
     private String name;
 
-    PayType(String name,Short code) {
-        this.code = code;
+    private PayWay(String name, Short code) {
         this.name = name;
+        this.code = code;
     }
 
-    public static String getName(Short code) {
-        for (PayType c : PayType.values()) {
+    public static String getName(Short code,String name) {
+        for (PayWay c : PayWay.values()) {
             if (c.getCode() == code) {
                 return c.name;
             }
@@ -42,4 +40,5 @@ public enum PayType {
     public void setCode(short code) {
         this.code = code;
     }
+
 }

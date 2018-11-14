@@ -1,4 +1,4 @@
-package com.constants;
+package com.wei.config.constants;
 
 import org.springframework.util.ClassUtils;
 
