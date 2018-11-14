@@ -8,7 +8,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<modules>
-		<module>Spring-Boot-Pay</module>
 		<module>SpringBootMain</module>
 		<module>Springboot-Dubbo-Provide</module>
 		<module>Springboot-Dubbo-Consume</module>
@@ -172,6 +171,7 @@
 			<artifactId>alipay-sdk-java</artifactId>
 			<version>1.0.0</version>
 		</dependency>
+
 	</dependencies>
 
 	<build>

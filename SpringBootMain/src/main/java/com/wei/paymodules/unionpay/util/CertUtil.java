@@ -31,7 +31,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import static com.itstyle.modules.unionpay.util.SDKUtil.isEmpty;
+import static com.wei.paymodules.unionpay.util.SDKUtil.isEmpty;
+
 
 public class CertUtil {
 	private static final Logger logger = LoggerFactory.getLogger(CertUtil.class);
@@ -61,14 +62,14 @@ public class CertUtil {
 	 * 添加签名，验签，加密算法提供者
 	 */
 	private static void addProvider(){
-		if (Security.getProvider("BC") == null) {
+		/*if (Security.getProvider("BC") == null) {
 			logger.info("add BC provider");
 			Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
 		} else {
 			Security.removeProvider("BC"); //解决eclipse调试时tomcat自动重新加载时，BC存在不明原因异常的问题。
 			Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
 			logger.info("re-add BC provider");
-		}
+		}*/
 		printSysInfo();
 	}
 	
@@ -709,7 +710,7 @@ public class CertUtil {
 	 */
 	public static PublicKey getEncryptTrackCertPublicKey(String modulus,
 			String exponent) {
-		if (SDKUtil.isEmpty(modulus) || SDKUtil.isEmpty(exponent)) {
+		if (isEmpty(modulus) || isEmpty(exponent)) {
 			logger.info("使用模和指数的方式获取公钥对象[modulus] OR [exponent] invalid");
 			return null;
 		}

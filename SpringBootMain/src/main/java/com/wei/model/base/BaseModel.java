@@ -23,6 +23,4 @@ public class BaseModel implements Serializable{
     private String createTime;
 
     private String editorTime;
-
-    private OrderModel model;
 }

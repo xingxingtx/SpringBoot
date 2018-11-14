@@ -1,6 +1,5 @@
 package com.wei.config;
 
-import com.wei.config.initData.InitDataConfig;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -20,14 +19,15 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Configuration
 @EnableSwagger2
 public class Swagger2 {
-
+    @Value("${swagger.show}")
+    private boolean swaggerShow;
     @Bean
     public Docket createRestApi() {
         return new Docket(DocumentationType.SWAGGER_2)
-                .enable(InitDataConfig.swaggerShow)
+                .enable(swaggerShow)
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.wei.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.wei"))
                 .paths(PathSelectors.any())
                 .build();
     }

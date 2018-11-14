@@ -36,19 +36,6 @@ public class UserController {
     private final Logger logger = LoggerFactory.getLogger(UserController.class);
     @Autowired
     private JavaMailSender mailSender; //自动注入的Bean
-    @Autowired
-    BaseModel model1;
-    @Autowired
-    BaseModel model2;
-    @Autowired
-    OrderModel orderModel;
-    @RequestMapping("/api/test")
-    @ApiOperation(value = "用户发送邮件操作", httpMethod = "GET", response = String.class, notes = "测试")
-    public String contextLoads(BaseModel baseModel) {
-        System.out.println(model1 == model2);
-        System.out.println(model1.getModel() == orderModel);
-        return null;
-    }
     @Value("${spring.mail.username}")
     private String sender; //读取配置文件中的参数
     /**
@@ -88,13 +75,5 @@ public class UserController {
         mailSender.send(message);
         return  "login";
     }
-
-    @RequestMapping("/api/online")
-    @ResponseBody
-    public Object online() {
-        return  "当前在线人数：" + HttpSessionListenerConfig.online + "人";
-    }
-
-
 
 }

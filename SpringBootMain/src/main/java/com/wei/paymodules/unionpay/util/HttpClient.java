@@ -15,7 +15,7 @@
  */
 package com.wei.paymodules.unionpay.util;
 
-import com.itstyle.modules.unionpay.util.BaseHttpSSLSocketFactory.TrustAnyHostnameVerifier;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -106,7 +106,7 @@ public class HttpClient {
 
 	/**
 	 * 发送信息到服务端 GET方式
-	 * @param data
+	 * @param
 	 * @param encoding
 	 * @return
 	 * @throws Exception
@@ -154,7 +154,7 @@ public class HttpClient {
 	 * 显示Response消息
 	 *
 	 * @param connection
-	 * @param CharsetName
+	 * @param
 	 * @return
 	 * @throws URISyntaxException
 	 * @throws IOException
@@ -226,7 +226,7 @@ public class HttpClient {
 		if ("https".equalsIgnoreCase(url.getProtocol())) {
 			HttpsURLConnection husn = (HttpsURLConnection) httpURLConnection;
 			husn.setSSLSocketFactory(new BaseHttpSSLSocketFactory());
-			husn.setHostnameVerifier(new TrustAnyHostnameVerifier());//解决由于服务器证书问题导致HTTPS无法访问的情况
+			husn.setHostnameVerifier(new BaseHttpSSLSocketFactory.TrustAnyHostnameVerifier());//解决由于服务器证书问题导致HTTPS无法访问的情况
 			return husn;
 		}
 		return httpURLConnection;
@@ -255,7 +255,7 @@ public class HttpClient {
 		if ("https".equalsIgnoreCase(url.getProtocol())) {
 			HttpsURLConnection husn = (HttpsURLConnection) httpURLConnection;
 			husn.setSSLSocketFactory(new BaseHttpSSLSocketFactory());
-			husn.setHostnameVerifier(new TrustAnyHostnameVerifier());//解决由于服务器证书问题导致HTTPS无法访问的情况
+			husn.setHostnameVerifier(new BaseHttpSSLSocketFactory.TrustAnyHostnameVerifier());//解决由于服务器证书问题导致HTTPS无法访问的情况
 			return husn;
 		}
 		return httpURLConnection;

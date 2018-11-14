@@ -13,7 +13,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
  * Created by wei.peng on 2018/10/19.
  */
 @Configuration
-public class MyWebConfig implements WebMvcConfigurer {
+public abstract class MyWebConfig implements WebMvcConfigurer {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/zxc/foo").setViewName("foo");
