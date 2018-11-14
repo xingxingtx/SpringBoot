@@ -1,10 +1,6 @@
 package com.wei.utils;
 
 
-import com.wei.exceptions.DataValidationException;
-import com.wei.utils.define.StatusDefine;
-import com.wei.utils.define.StatusDefineMessage;
-import com.wei.utils.json.JsonResponseData;
 import com.wei.utils.validation.DataValidation;
 import org.apache.commons.lang3.StringUtils;
 import org.joda.time.DateTime;

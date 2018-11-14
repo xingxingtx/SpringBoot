@@ -7,8 +7,6 @@ import com.wei.ueditor.define.AppInfo;
 import com.wei.ueditor.define.BaseState;
 import com.wei.ueditor.define.FileType;
 import com.wei.ueditor.define.State;
-
-
 import com.wei.ueditor.utils.FileUtils;
 import org.apache.tomcat.util.http.fileupload.FileItemStream;
 import org.apache.tomcat.util.http.fileupload.disk.DiskFileItemFactory;

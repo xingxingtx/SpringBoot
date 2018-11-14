@@ -1,11 +1,11 @@
 package com.wei.config.initpay;
 
+import com.alipay.demo.trade.config.Configs;
 import com.wei.paymodules.unionpay.util.SDKConfig;
 import com.wei.paymodules.weixinpay.util.ConfigUtil;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.stereotype.Component;
-import com.alipay.demo.trade.config.Configs;
 /**
  *
  * @author Administrator

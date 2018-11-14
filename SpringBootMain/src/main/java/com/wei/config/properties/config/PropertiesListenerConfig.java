@@ -1,13 +1,13 @@
 package com.wei.config.properties.config;
 
+import org.springframework.beans.BeansException;
+import org.springframework.core.io.support.PropertiesLoaderUtils;
+
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
-
-import org.springframework.beans.BeansException;
-import org.springframework.core.io.support.PropertiesLoaderUtils;
 
 /**
  * 第四种方式：PropertiesLoaderUtils

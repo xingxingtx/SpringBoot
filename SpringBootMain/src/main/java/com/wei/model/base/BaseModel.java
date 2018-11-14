@@ -1,6 +1,5 @@
 package com.wei.model.base;
 
-import com.wei.model.order.OrderModel;
 import lombok.Data;
 
 import java.io.Serializable;

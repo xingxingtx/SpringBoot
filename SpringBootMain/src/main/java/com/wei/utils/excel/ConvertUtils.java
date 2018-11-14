@@ -1,5 +1,7 @@
 package com.wei.utils.excel;
 
+import org.apache.commons.beanutils.PropertyUtilsBean;
+
 import java.beans.BeanInfo;
 import java.beans.IntrospectionException;
 import java.beans.Introspector;
@@ -8,9 +10,6 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.HashMap;
 import java.util.Map;
-
-
-import org.apache.commons.beanutils.PropertyUtilsBean;
 
 public class ConvertUtils {
 	public static Map<String, Object> toMap(Object obj) {

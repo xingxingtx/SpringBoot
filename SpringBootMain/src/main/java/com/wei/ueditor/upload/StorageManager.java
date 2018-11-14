@@ -4,7 +4,6 @@ package com.wei.ueditor.upload;
 import com.wei.ueditor.define.AppInfo;
 import com.wei.ueditor.define.BaseState;
 import com.wei.ueditor.define.State;
-
 import org.apache.commons.io.FileUtils;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
