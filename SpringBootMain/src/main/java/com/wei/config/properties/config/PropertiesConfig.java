@@ -8,6 +8,7 @@ import java.util.Map;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 //import org.springframework.context.annotation.PropertySource;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;
 
@@ -18,7 +19,7 @@ import org.springframework.stereotype.Component;
  * @version V1.0
  * @since JDK ： 1.8
  */
-@Component
+@Configuration
 @ConfigurationProperties(prefix = "com.wei")
 // PropertySource默认取application.properties
  @PropertySource(value = "myconfig.yml")

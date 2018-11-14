@@ -19,4 +19,5 @@ public class EmailModel extends BaseModel {
     //邮件内容
     private String text;
 
+
 }

@@ -1,11 +1,17 @@
 package com.wei.model.base;
 
+import com.wei.model.order.OrderModel;
+import lombok.Data;
+
+import java.io.Serializable;
+
 /**
  *
  * @author Administrator
  * @date 2018/11/12
  */
-public class BaseModel {
+@Data
+public class BaseModel implements Serializable{
     private String id;
 
     private String state;
@@ -18,4 +24,5 @@ public class BaseModel {
 
     private String editorTime;
 
+    private OrderModel model;
 }

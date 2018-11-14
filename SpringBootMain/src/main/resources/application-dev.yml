@@ -74,3 +74,20 @@ swagger:
 #配置mybatis扫描位置
 mybatis:
   mapper-locations: classpath*:mapper/**/*Mapper.xml
+
+#\u9879\u76ee\u5730\u5740
+server:
+  context:
+    urr: http://localhost:8080/springboot_pay/
+#\u652f\u4ed8\u5b9d\u540e\u53f0\u56de\u8c03
+alipay:
+  notify:
+    url: https://blog.52itstyle.com/alipay/pay
+#\u5fae\u4fe1\u540e\u53f0\u56de\u8c03
+wexinpay:
+  notify:
+    url: https://blog.52itstyle.com/weixin/pay
+#\u94f6\u8054\u540e\u53f0\u56de\u8c03
+unionpay:
+  notify:
+    url: https://blog.52itstyle.com/union/pay
