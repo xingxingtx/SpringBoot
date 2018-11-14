@@ -2,7 +2,7 @@ package com.wei.exceptions;
 
 /**
  * @Description:
- * @Author:Huangdong
+ * @Author:wei.peng
  * @Date:2018/9/20 17:44
  * @Version V1.0
  */

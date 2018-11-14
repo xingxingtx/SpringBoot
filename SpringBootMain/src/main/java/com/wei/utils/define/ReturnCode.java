@@ -2,7 +2,7 @@ package com.wei.utils.define;
 
 /**
  * @Description:
- * @Author: Huangdong
+ * @Author: wei.peng
  * @CreateDate: 2018年8月28日 09:52:08
  * @Version: 1.0
  */
