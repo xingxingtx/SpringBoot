@@ -24,8 +24,8 @@ import java.util.Properties;
 
 /**
  * 软件开发工具包 配制
- * 创建者 科帮网
- * 创建时间	2017年8月2日
+ * 创建者 wei.peng
+ * 创建时间	2018年8月2日
  *
  */
 public class SDKConfig {

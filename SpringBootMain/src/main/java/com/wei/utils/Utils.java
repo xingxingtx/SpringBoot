@@ -26,7 +26,7 @@ import java.util.*;
 
 /**
  * 系统工具类
- * Create by tanshaoxing on 2017-07-19.
+ * Create by tanshaoxing on 2018-07-19.
  * @author Administrator
  */
 public class Utils {
@@ -60,7 +60,7 @@ public class Utils {
 
     /**
      * 将时间格式字符串按格式转换成日期
-     * add by yanggen 20170818
+     * add by yanggen 20180818
      */
     public static Date strToDate(String strDate, DateFormat formatter) {
         Date strtodate = null;
@@ -74,7 +74,7 @@ public class Utils {
 
     /**
      * 将时间按格式转换成字符串
-     * add by yanggen 20170818
+     * add by yanggen 20180818
      */
     public static String dateToStr(Date date, DateFormat formatter) {
         String dateStr;

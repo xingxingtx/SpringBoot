@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Map;
 
 /**
- * Created by tanshaoxing on 2017/11/20.
+ * Created by tanshaoxing on 2018/11/20.
  * 对象、集合转换成json字符串工具类
  */
 public class JsonTool {

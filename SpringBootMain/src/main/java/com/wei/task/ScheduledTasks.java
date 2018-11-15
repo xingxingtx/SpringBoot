@@ -51,8 +51,8 @@ public class ScheduledTasks {
      *
      * @author zhangyd
      */
-    @Scheduled(initialDelay = 10000, fixedRate = 20000)
+   /* @Scheduled(initialDelay = 10000, fixedRate = 20000)
     public void doInitialDelay() {
         log.info(new Date() + "+++++++++++++++++++doInitialDelay");
-    }
+    }*/
 }

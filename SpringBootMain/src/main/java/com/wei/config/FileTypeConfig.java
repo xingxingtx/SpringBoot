@@ -1,7 +1,7 @@
 package com.wei.config;
 
 /**
- * Created by cat on 2017/11/23.
+ * Created by cat on 2018/11/23.
  * 上传文件格式
  */
 public class FileTypeConfig {

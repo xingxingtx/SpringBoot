@@ -85,11 +85,11 @@ public class ConfigUtil {
 
     /**
      * 基础参数
-     * @Author  科帮网
+     * @Author  wei.peng
      * @param packageParams  void
-     * @Date	2017年7月31日
+     * @Date	2018年7月31日
      * 更新日志
-     * 2017年7月31日  科帮网 首次创建
+     * 2018年7月31日  wei.peng 首次创建
      *
      */
     public static void commonParams(SortedMap<Object, Object> packageParams) {
@@ -108,11 +108,11 @@ public class ConfigUtil {
 
     /**
      * 该接口主要用于扫码原生支付模式一中的二维码链接转成短链接(weixin://wxpay/s/XXXXXX)，减小二维码数据量，提升扫描速度和精确度
-     * @Author  科帮网
+     * @Author  wei.peng
      * @param urlCode  void
-     * @Date	2017年7月31日
+     * @Date	2018年7月31日
      * 更新日志
-     * 2017年7月31日  科帮网 首次创建
+     * 2018年7月31日  wei.peng 首次创建
      *
      */
     @SuppressWarnings("rawtypes")

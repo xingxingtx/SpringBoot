@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
 /**
  * @Author:wei.peng
  * @Desicription:数据验证公共类
- * @Date:Created in 2017-11-26
+ * @Date:Created in 2018-11-26
  * @Modified By:
  */
 @Component

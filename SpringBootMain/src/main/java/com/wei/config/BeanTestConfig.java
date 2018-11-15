@@ -17,7 +17,6 @@ public class BeanTestConfig {
         BaseModel baseModel = new BaseModel();
         baseModel.setId("1");
         baseModel.setCreate("1");
-        baseModel.setModel(getOrderModel());
         return baseModel;
     }
     @Bean

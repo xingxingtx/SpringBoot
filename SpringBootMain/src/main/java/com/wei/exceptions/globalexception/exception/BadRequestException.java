@@ -4,7 +4,7 @@ package com.wei.exceptions.globalexception.exception;
  * 模拟400错误处理异常类
  * 
  * @author wei.peng
- * @date 2017年6月8日 上午9:27:29 
+ * @date 2018年6月8日 上午9:27:29
  * @version V1.0
  * @since JDK ： 1.7
  */

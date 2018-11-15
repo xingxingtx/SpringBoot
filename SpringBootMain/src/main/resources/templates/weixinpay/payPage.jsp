@@ -34,7 +34,7 @@ String totalFee  = request.getParameter("totalFee");
 					<div class="detail-dl">
 						<dl>
 							<dt>收款方</dt>
-							<dd>科帮网</dd>
+							<dd>wei.peng</dd>
 						</dl>
 						<dl>
 							<dt>商&nbsp;&nbsp;&nbsp;品</dt>
@@ -92,7 +92,7 @@ function callpay(){
        }
 }
 function init(){
-	$("#orderNo").html("科帮网-订单编号："+orderNo);
+	$("#orderNo").html("wei.peng-订单编号："+orderNo);
 	totalFee = accDiv(totalFee,100);
 	$("#totalFee").html("￥"+totalFee);
 }

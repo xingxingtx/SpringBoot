@@ -22,7 +22,7 @@
 					<div class="detail-dl">
 						<dl>
 							<dt>收款方</dt>
-							<dd>科帮网</dd>
+							<dd>wei.peng</dd>
 						</dl>
 						<dl>
 							<dt>商&nbsp;&nbsp;&nbsp;品</dt>

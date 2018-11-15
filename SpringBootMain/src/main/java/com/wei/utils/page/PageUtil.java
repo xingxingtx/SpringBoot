@@ -1,7 +1,7 @@
 package com.wei.utils.page;
 
 /**
- * Created by tanshaoxing on 2017/7/26.
+ * Created by tanshaoxing on 2018/7/26.
  */
 public class PageUtil {
     public static final String ASC = "asc";

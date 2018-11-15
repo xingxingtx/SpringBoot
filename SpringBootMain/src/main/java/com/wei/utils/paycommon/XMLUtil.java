@@ -20,8 +20,8 @@ import java.util.Map;
 
 /**
  * XML解析
- * 创建者 科帮网
- * 创建时间	2017年7月31日
+ * 创建者 wei.peng
+ * 创建时间	2018年7月31日
  *
  */
 public class XMLUtil {

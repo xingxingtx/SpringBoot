@@ -1,7 +1,7 @@
 package com.wei.utils.define;
 
 /**
- * Created by tanshaoxing on 2017/11/20.
+ * Created by tanshaoxing on 2018/11/20.
  * API常量值信息获取
  */
 public class StatusDefineMessage {

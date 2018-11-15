@@ -9,14 +9,14 @@ import java.util.*;
 public class PayCommonUtil {
     /**
      * 是否签名正确,规则是:按参数名称a-z排序,遇到空值的参数不参加签名。
-     * @Author  科帮网
+     * @Author  wei.peng
      * @param characterEncoding
      * @param packageParams
      * @param API_KEY
      * @return  boolean
-     * @Date	2017年7月31日
+     * @Date	2018年7月31日
      * 更新日志
-     * 2017年7月31日  科帮网 首次创建
+     * 2018年7月31日  wei.peng 首次创建
      *
      */
     @SuppressWarnings({ "rawtypes"})
@@ -40,14 +40,14 @@ public class PayCommonUtil {
     }
     /**
      * sign签名
-     * @Author  科帮网
+     * @Author  wei.peng
      * @param characterEncoding
      * @param packageParams
      * @param API_KEY
      * @return  String
-     * @Date	2017年7月31日
+     * @Date	2018年7月31日
      * 更新日志
-     * 2017年7月31日  科帮网 首次创建
+     * 2018年7月31日  wei.peng 首次创建
      *
      */
     @SuppressWarnings({ "rawtypes"})
@@ -70,12 +70,12 @@ public class PayCommonUtil {
 
     /**
      * 将请求参数转换为xml格式的string
-     * @Author  科帮网
+     * @Author  wei.peng
      * @param parameters
      * @return  String
-     * @Date	2017年7月31日
+     * @Date	2018年7月31日
      * 更新日志
-     * 2017年7月31日  科帮网 首次创建
+     * 2018年7月31日  wei.peng 首次创建
      *
      */
     @SuppressWarnings({ "rawtypes"})
@@ -100,12 +100,12 @@ public class PayCommonUtil {
 
     /**
      * 取出一个指定长度大小的随机正整数.
-     * @Author  科帮网
+     * @Author  wei.peng
      * @param length
      * @return  int
-     * @Date	2017年7月31日
+     * @Date	2018年7月31日
      * 更新日志
-     * 2017年7月31日  科帮网 首次创建
+     * 2018年7月31日  wei.peng 首次创建
      *
      */
     public static int buildRandom(int length) {

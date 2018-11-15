@@ -1,10 +1,10 @@
 /**   
- * Copyright © 2017 Innodev. All rights reserved.
+ * Copyright © 2018 Innodev. All rights reserved.
  * 
  * @Title ExceptionHandle.java 
  * @Package com.zyd.globalexception.handle
  * @author wei.peng
- * @date 2017年6月7日 下午4:55:59 
+ * @date 2018年6月7日 下午4:55:59
  * @version V1.0   
  */
 package com.wei.exceptions.globalexception.handle;
@@ -32,7 +32,7 @@ import java.sql.SQLException;
  * 捕获程序所有异常，针对不同异常，采取不同的处理方式
  * 
  * @author wei.peng
- * @date 2017年6月7日 下午4:55:59
+ * @date 2018年6月7日 下午4:55:59
  * @version V1.0
  * @since JDK ： 1.7
  */
