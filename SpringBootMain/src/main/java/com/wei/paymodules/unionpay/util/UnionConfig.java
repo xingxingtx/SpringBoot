@@ -10,8 +10,8 @@ import java.util.Map.Entry;
 
 /**
  * 基础配置参数
- * 创建者 wei.peng
- * 创建时间	2018年8月2日
+ * 创建者 科帮网
+ * 创建时间	2017年8月2日
  *
  */
 public class UnionConfig {

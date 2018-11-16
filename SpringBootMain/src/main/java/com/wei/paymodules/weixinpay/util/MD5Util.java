@@ -1,11 +1,11 @@
-package com.wei.utils.paycommon;
+package com.wei.paymodules.weixinpay.util;
 
 import java.security.MessageDigest;
 
 /**
  * MD5加密
- * 创建者 wei.peng
- * 创建时间	2018年7月31日
+ * 创建者 科帮网
+ * 创建时间	2017年7月31日
  *
  */
 public class MD5Util {

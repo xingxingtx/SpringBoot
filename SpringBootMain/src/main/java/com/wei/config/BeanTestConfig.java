@@ -1,7 +1,7 @@
 package com.wei.config;
 
 import com.wei.model.base.BaseModel;
-import com.wei.model.order.OrderModel;
+import com.wei.model.order.Product;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
@@ -20,9 +20,8 @@ public class BeanTestConfig {
         return baseModel;
     }
     @Bean
-    public OrderModel getOrderModel(){
-        OrderModel orderModel = new OrderModel();
-        orderModel.setOrderId("1");
+    public Product getOrderModel(){
+        Product orderModel = new Product();
         return orderModel;
     }
 }

@@ -1,4 +1,4 @@
-package com.wei.utils.paycommon;
+package com.wei.paymodules.weixinpay.util;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,8 +9,8 @@ import java.net.URLConnection;
 
 /**
  * http请求(这里用户获取订单url生成二维码)
- * 创建者 wei.peng
- * 创建时间	2018年7月31日
+ * 创建者 科帮网
+ * 创建时间	2017年7月31日
  *
  * @author Administrator
  */

@@ -106,7 +106,7 @@ public class HttpClient {
 
 	/**
 	 * 发送信息到服务端 GET方式
-	 * @param
+	 * @param data
 	 * @param encoding
 	 * @return
 	 * @throws Exception
@@ -154,7 +154,7 @@ public class HttpClient {
 	 * 显示Response消息
 	 *
 	 * @param connection
-	 * @param
+	 * @param CharsetName
 	 * @return
 	 * @throws URISyntaxException
 	 * @throws IOException

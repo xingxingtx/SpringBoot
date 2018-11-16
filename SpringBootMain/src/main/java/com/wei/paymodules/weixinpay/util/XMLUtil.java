@@ -1,4 +1,4 @@
-package com.wei.utils.paycommon;
+package com.wei.paymodules.weixinpay.util;
 
 import org.jdom.Document;
 import org.jdom.Element;
@@ -20,14 +20,14 @@ import java.util.Map;
 
 /**
  * XML解析
- * 创建者 wei.peng
- * 创建时间	2018年7月31日
+ * 创建者 科帮网
+ * 创建时间	2017年7月31日
  *
  */
 public class XMLUtil {
 	/**
 	 * 解析xml,返回第一级元素键值对。如果第一级元素有子节点，则此节点的值是子节点的xml数据。
-	 *
+	 * 
 	 * @param strxml
 	 * @return
 	 * @throws JDOMException
@@ -73,7 +73,7 @@ public class XMLUtil {
 
 	/**
 	 * 获取子结点的xml
-	 *
+	 * 
 	 * @param children
 	 * @return String
 	 */

@@ -62,14 +62,14 @@ public class CertUtil {
 	 * 添加签名，验签，加密算法提供者
 	 */
 	private static void addProvider(){
-		/*if (Security.getProvider("BC") == null) {
+		if (Security.getProvider("BC") == null) {
 			logger.info("add BC provider");
 			Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
 		} else {
 			Security.removeProvider("BC"); //解决eclipse调试时tomcat自动重新加载时，BC存在不明原因异常的问题。
 			Security.addProvider(new org.bouncycastle.jce.provider.BouncyCastleProvider());
 			logger.info("re-add BC provider");
-		}*/
+		}
 		printSysInfo();
 	}
 	

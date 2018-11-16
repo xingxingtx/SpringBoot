@@ -1,6 +1,6 @@
 package com.wei.paymodules.weixinpay.service;
 
-import com.wei.model.order.OrderModel;
+import com.wei.model.order.Product;
 
 /**
  *
@@ -19,7 +19,7 @@ public interface IWeiXinPayService {
      * 2018/11/14  wei.peng 首次创建
      *
      */
-    String weixinPay2(OrderModel model);
+    String weixinPay2(Product model);
     /**
      * 微信支付下单(模式一)
      * @Author  wei.peng
@@ -29,7 +29,7 @@ public interface IWeiXinPayService {
      * 2018/11/14  wei.peng 首次创建
      *
      */
-    void weixinPay1(OrderModel model);
+    void weixinPay1(Product model);
     /**
      * 微信支付退款
      * @Author  wei.peng
@@ -40,7 +40,7 @@ public interface IWeiXinPayService {
      * 2018/11/14 wei.peng 首次创建
      *
      */
-    String weixinRefund(OrderModel model);
+    String weixinRefund(Product model);
     /**
      * 关闭订单
      * @Author  wei.peng
@@ -51,7 +51,7 @@ public interface IWeiXinPayService {
      * 2018/11/14  wei.peng 首次创建
      *
      */
-    String weixinCloseorder(OrderModel model);
+    String weixinCloseorder(Product model);
     /**
      * 下载微信账单
      * @Author  wei.peng  void
@@ -71,7 +71,7 @@ public interface IWeiXinPayService {
      * 2018/11/14 wei.peng 首次创建
      *
      */
-    String weixinPayMobile(OrderModel model);
+    String weixinPayMobile(Product model);
     /**
      * H5支付 唤醒 微信APP 进行支付
      * 申请入口：登录商户平台-->产品中心-->我的产品-->支付产品-->H5支付
@@ -83,11 +83,11 @@ public interface IWeiXinPayService {
      *2018/11/14 wei.peng 首次创建
      *
      */
-    String weixinPayH5(OrderModel model);
+    String weixinPayH5(Product model);
 
     /**
      * 查询订单
      * @param model
      */
-    void orderquery(OrderModel model);
+    void orderquery(Product model);
 }
