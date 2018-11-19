@@ -179,7 +179,16 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<dependencies>
+					<!-- mvn spring-boot:run 热部署启动  Ctrl + F9-->
+					<dependency>
+						<groupId>org.springframework</groupId>
+						<artifactId>springloaded</artifactId>
+						<version>1.2.7.RELEASE</version>
+					</dependency>
+				</dependencies>
 			</plugin>
+
 		</plugins>
 	</build>
 
